@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f3f4f7, #e2e5ec);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Game Container */
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px;
+  }
+  
+  /* Game Board */
+  .game-board {
+    margin-bottom: 20px;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .square:hover {
+    background-color: #f1f8ff;
+    transform: scale(1.05);
+  }
+  
+  .square.blank {
+    background-color: #f7f7f7;
+  }
+  
+  .square.moving {
+    background-color: #ffec99;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Game Info */
+  .game-info {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .game-info ol {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .game-info li {
+    margin: 10px 0;
+  }
+  
+  .game-info button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Scramble Button */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #1e7e34;
+  }
+  

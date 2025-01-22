@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding around the navbar items */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Space between navbar items */
+    align-items: center; /* Vertically center items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .navbar-links {
+    list-style: none; /* Remove bullets from list */
+    display: flex; /* Display links inline */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar-links li {
+    margin: 0 10px; /* Spacing between items */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navbar-links li:hover {
+    color: #1e90ff; /* Change color on hover */
+  }
+  
+  .navbar-links .username {
+    font-weight: bold; /* Bold font for username */
+    color: #4caf50; /* Green color for username */
+  }
+  
+  .navbar-links .logout {
+    color: #f44336; /* Red color for logout */
+  }
+  
+  .navbar-links .logout:hover {
+    color: #ff5722; /* Orange color on hover for logout */
+  }
+  

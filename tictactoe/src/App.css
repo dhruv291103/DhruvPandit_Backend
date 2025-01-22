@@ -1,0 +1,31 @@
+/* Centering the user greeting */
+.user-greeting {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 3vh; /* Full height of the screen */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 1vh;
+  }
+  
+  .username {
+    color: #fff; /* White color for the username */
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase; /* Makes the username in uppercase */
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #4f46e5, #7c3aed); /* Gradient background */
+    -webkit-background-clip: text; /* Clips the background gradient to the text */
+    color: transparent; /* Makes text color transparent so gradient is visible */
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .username:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
+  }
+  

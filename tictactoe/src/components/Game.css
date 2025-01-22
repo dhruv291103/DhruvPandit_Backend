@@ -1,0 +1,127 @@
+/* Game Component Styles */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #f9f9f9, #e6e6e6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  .player {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #28a745;
+  }
+  
+  .restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4757;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart:hover {
+    background-color: #e84141;
+  }
+  
+  .lobby, .invites {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lobby h2, .invites h2 {
+    font-size: 1.4rem;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+  }
+  
+  .available-players, .invite-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .available-players li, .invite-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .available-players li:hover, .invite-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .available-players button, .invite-list button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .available-players button:hover, .invite-list button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Board Styles */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .board button {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .board button:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.05);
+  }
+  
+  .board button:disabled {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+  }
+  

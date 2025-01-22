@@ -1,0 +1,87 @@
+/* Adding gap between navbar and signup form */
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto 0; /* Add 50px margin at the top */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rest of the styling remains unchanged */
+  .signup-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 10px;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Success message styling */
+  .success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Additional spacing for better readability */
+  .form-group input + .error {
+    margin-top: 5px;
+  }
+  
